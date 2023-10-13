@@ -1,0 +1,12 @@
+mutation CreatePost($title: String!, $body: String!, $subforum: String!) {
+  createPost(title: $title, body: $body, subforum: $subforum) {
+    errors {
+      field
+      message
+    }
+    post {
+      title
+      subforum
+    }
+  }
+}

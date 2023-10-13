@@ -1,0 +1,4 @@
+ fragment standardUser on User {
+      id
+      username
+    }

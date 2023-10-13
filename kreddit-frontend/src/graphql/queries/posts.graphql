@@ -1,0 +1,16 @@
+query Posts($limit: Int!, $offset: Int) {
+  posts(limit: $limit, offset: $offset) {
+    id
+    title
+    textSnippet
+    subforum
+    votes
+    createdAt
+    updatedAt
+    creator {
+      id
+      username
+      email
+    }
+  }
+}
