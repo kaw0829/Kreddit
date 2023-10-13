@@ -14,7 +14,7 @@ import { AppDataSource } from './utils/data-source';
 import { VoteResolver } from './resolvers/votes';
 
 const main = async () => {
-  // sendEmail('kaw0829@gmail.com', '<h1>Hello</h1>');
+  // sendEmail('', '<h1>Hello</h1>');
 
   const connection = await AppDataSource.initialize();
 
@@ -68,11 +68,11 @@ const main = async () => {
     session({
       name: COOKIE_NAME,
       // hide this with enviroment variable later
-      secret: 'saflkmsnfmasofknm',
+      secret: '',
       // update url to use process.env
       store: MongoStore.create({
         mongoUrl:
-          'mongodb+srv://Ken:Arthur@cluster0.q02cn.mongodb.net/FULLSTACK-TS-SESSION?retryWrites=true&w=majority',
+          '',
       }),
       resave: false,
       saveUninitialized: true,
